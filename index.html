@@ -13,14 +13,33 @@
 
 <body>
     <div class="container">
-        <header class="flex header-border">
+        <header class=" flex header-border">
             <div class="logo"><span class="tele">Telemetry</span><span class="pixelarity"> By Pixelarity</span></div>
-            <nav class="nav-menu">
-                <a href="#">Home</a>
-                <a href="#">Dropdown</a>
-                <a href="#">Generic</a>
-                <a href="#">Elements</a>
-            </nav>
+            <div class="nav-menu">
+                <ul class="flex">
+                    <li class="current-page"> <a href="#">Home</a> </li>
+                    <li class="dropdown"><a href="#">Dropdown</a>
+                        <ul class="dropdown-one">
+                            <li><a href="#">Option 1</a></li>
+                            <li><a href="#">Option 2</a></li>
+                            <li><a href="#">Option 3</a></li>
+                            <li class="dropdown-two">
+                                <a href="#">Sub-Menu</a>
+                                <ul class="dropdown-two-list">
+                                    <li><a href="#">Option One</a></li>
+                                    <li><a href="#">Option Two</a></li>
+                                    <li><a href="#">Option Three</a></li>
+                                    <li><a href="#">Option Four</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">Generic</a></li>
+                    <li> <a href="#">Elements</a></li>
+                </ul>
+            </div>
+
         </header>
     </div>
     <main>
@@ -28,7 +47,9 @@
         <!-- hero section -->
 
         <section class="hero">
-            <span class="laptop-icon"><i class="fas fa-laptop"></i></span>
+            <!-- <div class="icon-container">
+                <i class="fas fa-laptop"></i>
+            </div> -->
             <div class="hero-text text container">
 
                 <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
@@ -50,8 +71,8 @@
                 <div class="flex second">
                     <div class="second-border right">
                         <h3>Lorem, ipsum.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, repudiandae.</p>
-                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, repudiandae.</p>
+
                     </div>
                     <div class="second-border bottom">
                         <h3>Lorem Ipsum</h3>
@@ -89,52 +110,93 @@
                 <div class="number left">
                     <h2>768</h2>
                     <h3 class="text">Sky Scraper</h3>
-                    <p class="pink-para text">Lorem ipsum dolor sit amet consectetur.</p></div>
-            </div>            
+                    <p class="pink-para text">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </section>
+        <!-- slider -->
+            <section class="container">
+                <div class="slider-main">
+                    <div class="heading-container">
+                        <h4> <span class="slider-border heading">Aliquam</span></h4>
+                    </div>
+                    <div class="flex-slider slider-border">
+                        <div class="slider-text-section">
+                            <h3>Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>
+                            <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
+                            <button class="btn">Learn More</button>
+                        </div>
+                        <div class="slider-image">
+                            <img src="./assets/pic05.jpg" alt="figure relaxing">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- quotes section -->
+
+        <section class="quotes-section">
+            <div class="quotes-flex">
+                <div class="quotes-left">
+                    <span></span>
+                    <quote class="text quote">"Sed ultrices consequat dolor nulla fringilla dignissim"</quote>
+                    <p class="color-pink">Jane Doe</p>
+                    <p class="text">Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="quotes-right">
+                    <span></span>
+                    <quote class="text quote">"Nam velit et lorem porta quis at pulvinar tellus nibh"</quote>
+                    <p class="color-pink">John Doe</p>
+                    <p class="text">Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
         </section>
         <!-- percentage section -->
-        <section class="flex">
-            <div class="percent-image">
-                <h2 class="percent-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</h2>
-                <div>
-                    <img src="./assets/pic06.jpg" alt="image">
+        <section class="percent">
+            <div class="container flex">
+                <div class="percent-image">
+                    <h2 class="percent-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</h2>
+                    <div>
+                        <img src="./assets/pic06.jpg" alt="image">
+                    </div>
+                    <p class="percent-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dolorem, in
+                        esse
+                        fugiat assumenda,
+                        corrupti laboriosam vitae aperiam sed laborum similique impedit, consequatur ipsum! Numquam
+                        ratione
+                        fugit ducimus cupiditate eos.</p>
+                    <button class="learn-more">Learn More</button>
                 </div>
-                <p class="percent-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dolorem, in esse
-                    fugiat assumenda,
-                    corrupti laboriosam vitae aperiam sed laborum similique impedit, consequatur ipsum! Numquam ratione
-                    fugit ducimus cupiditate eos.</p>
-                <button class="learn-more">Learn More</button>
-            </div>
-            <div class="percent-list">
-                <p class="percent">Lorem, ipsum.</p>
-                <div class="line-holder">
-                    <div class="black-line"></div>
-                    <div class="red-line"></div>
-                    <p></p>
-                </div>
-                <p class="percent">Lorem, ipsum.</p>
-                <div class="line-holder">
-                    <div class="black-line"></div>
-                    <div class="red-line"></div>
-                    <p></p>
-                </div>
-                <p class="percent">Lorem, ipsum.</p>
-                <div class="line-holder">
-                    <div class="black-line"></div>
-                    <div class="red-line"></div>
-                    <p></p>
-                </div>
-                <p class="percent">Lorem, ipsum.</p>
-                <div class="line-holder">
-                    <div class="black-line"></div>
-                    <div class="red-line"></div>
-                    <p></p>
-                </div>
-                <p class="percent">Lorem, ipsum.</p>
-                <div class="line-holder">
-                    <div class="black-line"></div>
-                    <div class="red-line"></div>
-                    <p></p>
+                <div class="percent-list">
+
+                    <div class="line-holder">
+                        <p class="percent">Lorem, ipsum.</p>
+                        <progress value="60" max="100"></progress>
+                        <p>60%</p>
+                    </div>
+
+                    <div class="line-holder">
+                        <p class="percent">Lorem, ipsum.</p>
+                        <progress value="90" max="100"></progress>
+                        <p>100%</p>
+                    </div>
+
+                    <div class="line-holder">
+                        <p class="percent">Lorem, ipsum.</p>
+                        <progress value="75" max="100"></progress>
+                        <p>75%</p>
+                    </div>
+
+                    <div class="line-holder">
+                        <p class="percent">Lorem, ipsum.</p>
+                        <progress value="45" max="100"></progress>
+                        <p>45%</p>
+                    </div>
+
+                    <div class="line-holder">
+                        <p class="percent">Lorem, ipsum.</p>
+                        <progress value="55" max="100"></progress>
+                        <p>55%</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -152,7 +214,7 @@
                     <form class="form">
                         <input class="name form-display" type="text" name="name" placeholder="name">
                         <input class="email form-display" type="email" name="email" placeholder="e-mail"> <br>
-                        <input class="message form-display" type="textarea" name="message" placeholder="Message">
+                        <textarea class="message form-display" placeholder="Message"></textarea>
                         <br>
                         <button class="btn btn-submit" type="submit">Send Message</button>
                     </form>
@@ -165,5 +227,27 @@
         <p class="text foot">&copy Untitled. All right reserve </p>
     </footer>
 </body>
+<script>
+    const colorChange = document.querySelector(".header-border");
+
+    // window.addEventListener("scroll",function(event){
+    //     if(window.scrollY > 600) {
+    //         colorChange.style.backgroundColor = "#FF887B" ; 
+    //         colorChange.style.paddingTop = "70px";
+    //     }
+    //     else {
+    //         colorChange.style.backgroundColor= "transparent";
+    //         colorChange.style.paddingTop = "40px"
+    //     }
+    // });
+
+   const headingContainer = document.querySelector("heading-container")
+
+   headingContainer.addEventListener ("click", function(event){
+       if(event.target = headingContainer) {
+           
+       }
+   })
+</script>
 
 </html>
